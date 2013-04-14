@@ -1,7 +1,7 @@
 App.LabelsController = Ember.ObjectController.extend
   label: 'Success'
   type: 'success'
-  types: ['success', 'warning', 'important', 'info', 'inverse']
+  types: ['default', 'success', 'warning', 'important', 'info', 'inverse']
 
   select: (type) ->
     @set 'type', type

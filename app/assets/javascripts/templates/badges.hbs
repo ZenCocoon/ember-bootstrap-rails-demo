@@ -22,13 +22,13 @@
           Default
         </td>
         <td>
-          {{view Bootstrap.Badge content="1"}}
+          {{bsBadge content="1"}}
         </td>
         <td>
-          <code>&#123;{view Bootstrap.Badge content="1"}}</code>
+          <code>&#123;{bsBadge content="1"}}</code>
         </td>
         <td>
-          <code>&#123;{view Bootstrap.Badge contentBinding="controller.label"}}</code>
+          <code>&#123;{bsBadge contentBinding="controller.label"}}</code>
         </td>
       </tr>
       <tr>
@@ -36,13 +36,13 @@
           {{capitalize controller.type}}
         </td>
         <td>
-          {{view Bootstrap.Badge contentBinding="controller.label" typeBinding="controller.type"}}
+          {{bsBadge contentBinding="controller.label" typeBinding="controller.type"}}
         </td>
         <td>
-          <code>&#123;{view Bootstrap.Badge content="{{controller.label}}" type="{{controller.type}}"}}</code>
+          <code>&#123;{bsBadge content="{{controller.label}}" type="{{controller.type}}"}}</code>
         </td>
         <td>
-          <code>&#123;{view Bootstrap.Badge contentBinding="controller.label" typeBinding="controller.type"}}</code>
+          <code>&#123;{bsBadge contentBinding="controller.label" typeBinding="controller.type"}}</code>
         </td>
       </tr>
     </tbody>
