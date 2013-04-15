@@ -2,15 +2,9 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-
 gem 'rails',     '4.0.0.beta1',  github: 'rails/rails'
 gem 'arel',                      github: 'rails/arel'
 gem 'rails-api', '~> 0.1.0'
-
-gem 'sqlite3'
-
-gem 'thin'
-
 
 group :assets do
   gem 'sprockets-rails',        '~> 2.0.0.rc3', github: 'rails/sprockets-rails'
@@ -50,6 +44,9 @@ group :development do
 end
 
 group :development, :test do
+  gem 'thin'
+  gem 'sqlite3'
+
   gem 'poltergeist'
   gem 'konacha'
   gem 'ember-konacha-rails',              github: 'kristianmandrup/ember-konacha-rails'
