@@ -204,6 +204,7 @@ GEM
     multi_json (1.7.2)
     multi_xml (0.5.3)
     nokogiri (1.5.9)
+    pg (0.15.1)
     poltergeist (1.2.0)
       capybara (~> 2.1.0)
       faye-websocket (~> 0.4, >= 0.4.4)
@@ -277,6 +278,7 @@ DEPENDENCIES
   guard-livereload
   jquery-rails
   konacha
+  pg
   poltergeist
   quiet_assets
   rails (= 4.0.0.beta1)!
