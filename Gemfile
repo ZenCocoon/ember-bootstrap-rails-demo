@@ -22,7 +22,7 @@ end
 gem 'slim', '~> 2.0.0.pre.6'
 
 # rails 4 compatible version!
-gem 'compass-rails',                      github: 'Compass/compass-rails', branch: 'rails4'
+# gem 'compass-rails',                      github: 'Compass/compass-rails', branch: 'rails4'
 
 gem 'jquery-rails'
 gem 'ember-source',      "1.0.0.rc2.0"

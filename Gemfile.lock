@@ -1,12 +1,4 @@
 GIT
-  remote: git://github.com/Compass/compass-rails.git
-  revision: 3e0040191220992eb6d5ccc17ddcc053733ee538
-  branch: rails4
-  specs:
-    compass-rails (1.0.3)
-      compass (>= 0.12.2, < 0.14)
-
-GIT
   remote: git://github.com/alexspeller/emblem-rails.git
   revision: ceb2628af8e7460d13cd5331dbec81fa12ae6e10
   specs:
@@ -134,17 +126,12 @@ GEM
       xpath (~> 2.0)
     childprocess (0.3.9)
       ffi (~> 1.0, >= 1.0.11)
-    chunky_png (1.2.8)
     coderay (1.0.9)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
     colorize (0.5.8)
-    compass (0.12.2)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
     daemons (1.1.9)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
@@ -174,7 +161,6 @@ GEM
       eventmachine (>= 0.12.0)
     ffi (1.7.0)
     formatador (0.2.4)
-    fssm (0.2.10)
     guard (1.7.0)
       formatador (>= 0.2.4)
       listen (>= 0.6.0)
@@ -280,7 +266,6 @@ DEPENDENCIES
   arel!
   bootstrap-sass (~> 2.3.1.0)
   coffee-rails!
-  compass-rails!
   ember-auth-rails
   ember-bootstrap-rails (~> 0.0.2)!
   ember-konacha-rails!
