@@ -47,7 +47,6 @@ end
 
 group :development, :test do
   gem 'thin'
-  gem 'sqlite3'
 
   gem 'poltergeist'
   gem 'konacha'
