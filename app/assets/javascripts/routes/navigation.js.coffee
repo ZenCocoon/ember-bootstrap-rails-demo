@@ -26,3 +26,8 @@ App.NavigationRoute = Ember.Route.extend
       outlet: 'objects_custom'
       controller: @controllerFor('navigationObjectsCustom').set('content', App.NavigationObject.find())
     }
+    @render 'navigation/mixed', {
+      into: 'navigation'
+      outlet: 'mixed'
+      controller: @controllerFor('navigationMixed').set('content', App.NavigationObject.find())
+    }

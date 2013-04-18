@@ -1,0 +1,35 @@
+<h2>NavList with mixed objects and stactic content</h2>
+<h6>Fixtures</h6>
+<pre class="prettyprint linenums">App.NavigationObject.FIXTURES = [
+  { id:  1
+  name:   'Name 1'
+  title:  'Nav 1',
+  link:   'nav-1',
+  mylink: 'mynav-1'},
+  { id:  2
+  name:   'Name 2',
+  title:  'Nav 2',
+  link:   'nav-2',
+  mynav:  'mynav-2'}
+]</pre>
+<h6>Controller</h6>
+<pre class="prettyprint linenums">App.NavigationMixedController = Ember.ArrayController.extend
+  selections: (->
+    array = []
+    @get('content').forEach (item) ->
+      array.pushObject
+        title: item.get 'name'
+        link: item.get 'link'
+    array.pushObject
+      title: 'New'
+      link: '/new'
+    array
+  ).property '@each'
+  selection: (->
+    if @get 'length' > 0 then @get('firstObject').get('name') else ''
+  ).property '@each'</pre>
+<h6>Template</h6>
+<pre class="prettyprint linenums">&#123;{view Bootstrap.NavList contentBinding="controller.selections"}}</pre>
+<div class="bs-docs-example">
+  {{view Bootstrap.NavList contentBinding="controller.selections"}}
+</div>
