@@ -1,4 +1,4 @@
-App.StackableNavController = Ember.ObjectController.extend
+App.NavigationStackableController = Ember.ObjectController.extend
   selections: ['Alpha', 'Beta', 'Gamma']
   selection: 'Alpha'
   stacked: true

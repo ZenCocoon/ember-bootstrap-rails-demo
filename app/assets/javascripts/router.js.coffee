@@ -2,10 +2,9 @@ App.Router.map ->
   @route 'home', path: "/"
 
   @resource 'components', ->
+    @resource 'navigation'
     @resource 'labels'
     @resource 'badges'
-    @resource 'navigation'
-    @resource 'stackable-nav'
 
   @route 'text'
   @route 'forms'

@@ -1,0 +1,22 @@
+<h2>Stackable Tabs
+<form class="pull-right">
+  <label class="checkbox inline">
+    {{view Ember.Checkbox checkedBinding="controller.stacked"}} Stacked?
+  </label>
+</form></h2>
+<h6>Controller</h6>
+<pre class="prettyprint linenums">App.NavigationStackableController = Ember.ObjectController.extend
+  selections: ['Alpha', 'Beta', 'Gamma']
+  selection: 'Alpha'
+  stacked: {{stacked}}</pre>
+<h6>Template</h6>
+<pre class="prettyprint linenums">&#123;{view Bootstrap.Tabs
+       contentBinding="controller.selections"
+       selectionBinding="controller.selection"
+       isStackedBinding="controller.stacked"}}</pre>
+<div class="bs-docs-example">
+  {{view Bootstrap.Tabs
+        contentBinding="controller.selections"
+        selectionBinding="controller.selection"
+        isStackedBinding="controller.stacked"}}
+</div>

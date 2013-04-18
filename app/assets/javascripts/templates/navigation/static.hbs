@@ -1,0 +1,13 @@
+<h2>Tabs with static content</h2>
+<h6>Controller</h6>
+<pre class="prettyprint linenums">App.NavigationStaticController = Ember.ObjectController.extend
+  content: ['Alpha', 'Beta', 'Gamma']
+  selection: 'Alpha'</pre>
+<h6>Template</h6>
+<pre class="prettyprint linenums">&#123;{view Bootstrap.Tabs
+       contentBinding="controller.content"
+       selectionBinding="controller.selection}}</pre>
+<div class="bs-docs-example">
+  {{view Bootstrap.Tabs contentBinding="controller.content"
+         selectionBinding="controller.selection"}}
+</div>
