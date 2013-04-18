@@ -11,5 +11,5 @@ App.NavigationMixedController = Ember.ArrayController.extend
     array
   ).property '@each'
   selection: (->
-    if @get 'length' > 0 then @get('firstObject').get('name') else ''
+    if @get 'length' > 0 then @get('firstObject').get('name') else null
   ).property '@each'
