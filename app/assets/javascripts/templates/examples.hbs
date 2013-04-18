@@ -8,21 +8,11 @@
 <div class="container">
   <div class="row">
     <div class="span3 bs-docs-sidebar">
-      <ul class="nav nav-list bs-docs-sidenav">
-        {{#each example in controller}}
-          <li>{{#linkTo example example}}<i class="icon-chevron-right"></i>{{example.name}}{{/linkTo}}</li>
-        {{/each}}
-      </ul>
+      {{view Bootstrap.NavList classNames="bs-docs-sidenav"
+             contentBinding="controller"}}
     </div>
     <div class="span9">
-
-    <section id="home">
-      <div class="page-header">
-        <h1>Ember Bootstrap Rails Examples</h1>
-      </div>
-
-    </section>
-
+      {{ outlet }}
     </div>
   </div>
 </div>
