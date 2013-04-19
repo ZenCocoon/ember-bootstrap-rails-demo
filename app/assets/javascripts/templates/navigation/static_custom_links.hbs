@@ -1,11 +1,11 @@
 <h2>Pills with static custom links</h2>
 <h6>Controller</h6>
 <pre class="prettyprint linenums">App.NavigationStaticCustomLinksController = Ember.ObjectController.extend
-  selections: new A([
+  selections: [
     {title: 'Alpha', link: 'link-a'},
     {title: 'Beta',  link: 'link-b'},
     {title: 'Gamma', link: 'link-g'}
-  ])
+  ]
   selection: 'Alpha'</pre>
 <h6>Template</h6>
 <pre class="prettyprint linenums">&#123;{view Bootstrap.Pills
