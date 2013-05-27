@@ -3,6 +3,7 @@ App.Router.map ->
 
   @resource 'components', ->
     @resource 'navigation'
+    @resource 'modal'
     @resource 'labels'
     @resource 'badges'
 

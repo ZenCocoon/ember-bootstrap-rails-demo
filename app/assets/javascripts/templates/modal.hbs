@@ -1,0 +1,28 @@
+<section id="navigation">
+  <div class="page-header">
+    <h1>Modal</h1>
+    <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+  </div>
+
+  <h6>Controller</h6>
+  <pre class="prettyprint linenums">App.ModalController = Ember.ObjectController.extend
+  show: ->
+    Bootstrap.ModalPane.popup
+      heading: 'Sample modal pane'
+      message: 'Sample message...'
+      primary: 'OK'
+      secondary: 'Cancel'
+      showBackdrop: true
+      callback: (opts, event) ->
+        if (opts.primary)
+          console.log 'primary'
+        else if (opts.secondary)
+          console.log 'secondary'
+        else
+          console.log 'close'</pre>
+  <h6>Template</h6>
+  <pre class="prettyprint linenums">&lt;a class="btn btn-primary" &#123;{action show}}>Launch demo modal&lt;/a></pre>
+  <div class="bs-docs-example">
+    <a class="btn btn-primary" {{action show}}>Launch demo modal</a>
+  </div>
+</section>
