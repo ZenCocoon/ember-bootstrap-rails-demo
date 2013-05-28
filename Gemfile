@@ -20,8 +20,7 @@ group :assets do
   gem 'ember-bootstrap-rails',  github: 'ZenCocoon/ember-bootstrap-rails'
 end
 
-# SLIM: mmmm, less <%%>s
-# gem 'slim', '~> 2.0.0.pre.6'
+gem 'slim', '~> 2.0.0'
 
 # rails 4 compatible version!
 # gem 'compass-rails',                      github: 'Compass/compass-rails', branch: 'rails4'
