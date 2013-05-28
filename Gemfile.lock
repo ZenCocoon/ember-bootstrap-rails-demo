@@ -231,16 +231,12 @@ GEM
       ffi (>= 0.5.0)
     rubyjs-rails (0.7.2.1)
     sass (3.2.7)
-    slim (2.0.0.pre.8)
-      temple (~> 0.6.4)
-      tilt (~> 1.3.6)
     slop (3.4.4)
     sprockets (2.9.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    temple (0.6.4)
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -287,7 +283,6 @@ DEPENDENCIES
   rb-inotify
   rubyjs-rails
   sass-rails!
-  slim (~> 2.0.0.pre.6)
   sprockets-rails (~> 2.0.0.rc3)!
   sweet_routing!
   thin

@@ -21,7 +21,7 @@ group :assets do
 end
 
 # SLIM: mmmm, less <%%>s
-gem 'slim', '~> 2.0.0.pre.6'
+# gem 'slim', '~> 2.0.0.pre.6'
 
 # rails 4 compatible version!
 # gem 'compass-rails',                      github: 'Compass/compass-rails', branch: 'rails4'
